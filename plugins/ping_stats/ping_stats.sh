@@ -1,5 +1,15 @@
 #!/bin/bash
 
+###########################################################
+# Script Name : ping_stats.sh
+# Description : 
+# Author      : Christopher Naranjo Gonzalez
+# Email       : cnaranjo@nsoporte.com
+# Date        : 2025-09-01
+# Version     : 1.0
+###########################################################
+
+
 
 #$1 -> Ping mode (1- latency, 2- loss)
 #$2 -> Hostname
