@@ -31,7 +31,7 @@ for config in $(find zabbix_config/ -type f); do
 done
 
 # chnod permissions for zabbix configuration files
-chown -R zabbix:zabbix /etc/zabbix/zabbix_agentd.d/*
+chown -R zabbix:zabbix /etc/zabbix/zabbix_agent2.d/*
 
 # Restart Zabbix Agent service to apply changes
 systemctl enable zabbix-agent2
