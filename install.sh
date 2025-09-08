@@ -14,8 +14,8 @@ if [ ! -d "/usr/local/lib/zabbix/nsoporte" ]; then
     mkdir -p /usr/local/lib/zabbix/nsoporte
 fi
 
-if [ ! -d "/etc/zabbix/zabbix_agentd.d" ]; then
-    mkdir -p /etc/zabbix/zabbix_agentd.d
+if [ ! -d "/etc/zabbix/zabbix_agent2.d" ]; then
+    mkdir -p /etc/zabbix/zabbix_agent2.d
 fi
 
 # Copy the plugins to the appropriate directory
@@ -27,7 +27,7 @@ chmod +x /usr/local/lib/zabbix/nsoporte/*
 
 # Copy zabbix configuration files
 for config in $(find zabbix_config/ -type f); do
-    cp -f "$config" /etc/zabbix/zabbix_agentd.d/
+    cp -f "$config" /etc/zabbix/zabbix_agent2.d/
 done
 
 # chnod permissions for zabbix configuration files
